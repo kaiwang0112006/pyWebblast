@@ -1,0 +1,14 @@
+table#destable {
+    border-collapse: separate;
+    width: 100%;
+    border-width: 1;
+    font: 83%/1.5 arial,tahoma,verdana,sans-serif;
+    font-size:14;
+    text-align:left;   
+    vertical-align:top;
+}
+
+table#destable td{
+    padding: 0.5em 0em;
+}
+

@@ -1,0 +1,39 @@
+<%inherit file="basepage.html"/> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<%block name="title"></%block>
+<%block name="content">
+<link rel="stylesheet" type="text/css" href="${request.static_url('webblast:static/css/hometable.css')}">
+<table id="destable">
+    <caption>Choose a BLAST program to run.</caption>						
+	<tbody>
+	<tr>
+	    <th><div>Program</div></th>
+	    <th><div>Program Description</div></th>
+	</tr>
+	<tr class="odd">
+        <td class="link"><a href="/blastn" id="homeBlastn">nucleotide blast</a></td>
+        <td class="desc">Search a <strong>nucleotide</strong> database using a <strong>nucleotide</strong> query</td>
+   </tr>
+   <tr>
+       <td class="link"><a href="/blastp" id="homeBlastp">protein blast</a></td>
+       <td class="desc">Search <strong>protein</strong> database using a <strong>protein</strong> query<br>
+       <span class="inc"><em>Algorithms:</em> blastp, phi-blast</span></td>
+   </tr>
+
+   <tr class="odd">
+       <td class="link"><a href="/blastx" id="homeBlastx">blastx</a></td>
+       <td class="desc">Search <strong>protein</strong> database using a <strong>translated nucleotide</strong> query</td>
+   </tr>
+
+    <tr>
+       <td class="link"><a href="/tblastn" id="homeTblastn">tblastn</a></td>
+       <td class="desc">Search <strong>translated nucleotide</strong> database using a <strong>protein</strong> query</td>
+   </tr>
+
+   <tr class="odd">
+       <td class="link"><a href="tblastx" id="homeTblastx">tblastx</a></td>
+       <td class="desc">Search <strong>translated nucleotide</strong> database using a <strong>translated nucleotide</strong> query</td>
+   </tr>
+	</tbody>
+</table>
+</%block>

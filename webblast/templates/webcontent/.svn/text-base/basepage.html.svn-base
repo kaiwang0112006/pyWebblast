@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><%block name="title" /></title>
+<link rel="stylesheet" type="text/css" href="${request.static_url('webblast:static/css/base.css')}">
+<script type="text/javascript" src="${request.static_url('webblast:static/js/software/jquery110.js')}"></script>
+</head>
+<body style="background-color:white;">
+<div class="title">
+<h1 ><br>Web blast</h1>
+<div class="nav">
+	<ul>
+	   <li><a href="/">Home</a></li>
+	   <li><a href="/blastn">blastn</a></li>
+	   <li><a href="/blastp">blastp</a></li>
+	   <li><a href="/blastx">blastx</a></li>
+	   <li><a href="/tblastn">tblastn</a></li>
+	   <li><a href="/tblastx">tblastx</a></li>
+	</ul>
+</div>
+<hr/>
+</div>
+<%block name="content"/>
+</body>
+</html>
+
