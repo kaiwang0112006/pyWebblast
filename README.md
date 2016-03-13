@@ -65,6 +65,39 @@ and a wsgi file:
 	
 include the new apache conf file in apache main conf file, for example in my PC, it is: /etc/httpd/conf/httpd.conf. And restart the apache server.
 
+Setup local blast database
+---------
+
+NCBI blast+ tools can formate database using:
+
+    $ makeblastdb -dbtype <db type> -title <db title> -in <db> -parse_seqids
+    
+-parse_seqids is required to generate links for downloading search hits
+
+Then add the database to blastdb.ini in webblast:
+
+	[Fagopyrum tataricum nucleotide]
+	dbpath = /Users/wangkai/blastprepare/blastdb/ftn
+	dbname = PBJellyAfterMatePair.fasta
+	dbtype = nucleotide
+	
+	[Fagopyrum tataricum protein]
+	dbpath = /Users/wangkai/blastprepare/blastdb/ft_p
+	dbname = FagopyrumProtein
+	dbtype = protein
+	
+Setup path of ncbi blast+
+---------
+
+After install ncbi blast+, setup the path in otheroptions.ini:
+
+	[ncbi]
+	basepath = /usr/local/ncbi/blast/bin/
+
+Temporary demo link
+---------
+
+[link](http://123.57.33.46/webblast)
 
 Newest screenshot
 ---------

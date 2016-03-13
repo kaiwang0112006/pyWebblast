@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*- 
 def add_adview (config):
     config.add_route('home', '/webblast')
-    config.add_route('home_slash', '/')
     #blastn
     config.add_route('blastnHome', '/blastn')
     config.add_route('blastnDemo', '/blastn/Demo')

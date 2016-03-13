@@ -80,21 +80,5 @@ def blastnrun(request):
         outfmtfileReturn = blastformat(timestr,parameters_data,temppath,staticpath,ncbibase,'blastn')
         xmlresult = parseXML(outfmtfileReturn['xml'][2],queryids)
         print 'returning result...'
-        #print outfmtfileReturn
-        #print xmlresult
-#         k = JSONEncoder().encode(xmlresult)
-#         print k 
-#         print type(k)
-#         xmlfin = open('xmlresult.txt','w')
-#         xmlfin.write(k)
-#         xmlfin.close()
-#           
-#         a = open('outfmtfileReturn.txt','w')
-#         a.write(str(outfmtfileReturn))
-#         a.close()
-        
-        #xmlresult = parseXML('/Users/wangkai/Documents/eclipse_workspace/webblast/webblast/static/tempfile/a_anonymous_blastx.xml',[('anonymouseq',960)])
-
-        #outfmtfileReturn = {'xml': ['XML', '/static/tempfile/a_anonymous_blastn.xml'], 'tabular': ['Table', '/static/tempfile/a_anonymous_blastn.tabular'], 'asn': ['BLAST archive (ASN.1)', '/static/tempfile/a_anonymous_blastn.out'], 'sam': ['SAM', '/static/tempfile/a_anonymous_blastn.sam'], 'text': ['Text', '/static/tempfile/a_anonymous_blastn.text']}     
 
         return {'outfmtfileReturn':outfmtfileReturn, 'xmlresult':xmlresult, 'error':''}
