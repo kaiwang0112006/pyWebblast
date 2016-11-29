@@ -97,7 +97,7 @@ After install ncbi blast+, setup the path in otheroptions.ini:
 Temporary demo link
 ---------
 
-[link](http://123.57.33.46/webblast)
+[link](http://123.57.33.46:8080/blastn/Demo)
 
 Newest screenshot
 ---------
